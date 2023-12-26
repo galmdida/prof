@@ -1,0 +1,203 @@
+/* Body - font-family, margin, and background color */
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: rgb(236, 236, 236);
+}
+
+/* Remove text decorations (underline) from all links */
+a {
+    text-decoration: none;
+}
+
+/* Header */
+/* Give it height */
+/* Make header a flex container */
+/* Add space between logo and tabs */
+/* Make logo and list to align properly */
+/* Create background color for header */
+/* Some padding on left-right */
+
+/* Making it responsive */
+/* Make the height 5% of what the user has set as html font size */
+/* Since padding is the width, use %ge */
+#main-header{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000010;
+    padding: 0 5%;
+}
+
+/* Styling logo */
+/* Upper case */
+/* Font size 24px */
+/* font weight bold */
+/* color to orange */
+
+/* Making it responsive */
+/* Since the browser default is 16px our 24px is like 1.5rem */
+#logo {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Dealing with tabs */
+/* Remove the dots */
+/* Display flex */
+/* Make sure there is no margin or padding on parent of li (ul) */
+#main-header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Create spaces between list */
+/* Margin 0 top bottom and 16 left right */
+
+/* making it responsive */
+/* it is like the same as browser default so, 16px is 1rem */
+#main-header li{
+    margin: 0 1rem;
+}
+
+/* I want achor tag in header, specifically the ones in nav */
+/* Change the color */
+/* Chnage font size to 20px */
+
+/* Make it responsive */
+/* 20px is like 1.25rem */
+#main-header nav a{
+    color:white;
+    font-size: 1.25rem;
+}
+
+/* Add hover effects to the links */
+#main-header nav a:hover{
+    color: #ffc100;
+}
+
+
+footer{
+    background-color: #000010;
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+#footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: #e97528;
+}
+
+footer li{
+    list-style: none;
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer img{
+    height: 2rem;
+    width: 2rem;
+}
+
+
+/* Hambager */
+.menu-btn{
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.menu-btn span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+
+/* Styling side-drawer */
+/* Covers everything thus Width of 100% and height of 100% */
+/* Remove position out of document flow with fixed */
+
+/* Add side-drawer Id to the button for mobile view */
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: #000010;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* Add target select, it is active only if the target is selected */
+#side-drawer:target{
+    display: block;
+}
+
+/* Styling the list */
+/* Lets achieve center with flex */
+/* Remove default margin */
+/* Add padding */
+#side-drawer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 3rem 1rem;
+}
+
+/* Styling achor tags in side drawer */
+#side-drawer a{
+    color: rgb(253, 239,213);
+    font-size: 2rem;
+}
+
+/* Styling list to add space between links */
+#side-drawer li{
+    margin: 1rem 0;
+}
+
+/* Style the new hamberger button */
+/* Same as main header */
+/* Just change the justify content to flex-end */
+/* background color is not required */
+#side-drawer header{
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+}
+
+
+/* *************************Footer for mobile device */
+
+
+@media(max-width: 480px){
+
+    #footer-content{
+        flex-direction: column;
+    }
+}

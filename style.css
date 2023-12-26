@@ -1,0 +1,413 @@
+#jumbo{
+    height: 30rem;
+    background-image: url("/mine/hollic-1075.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+#jumbo-content{
+    width: 50rem;
+    background-color: rgba(50, 40, 40, 0.8);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 auto;
+    position: relative;
+    top: 12rem;
+}
+
+#jumbo-content{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#jumbo-content a{
+    text-decoration: none;
+    background-color: #ffc100;
+    padding: 6px 12px;
+    color: #000010;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px black;
+}
+
+#jumbo-content a:hover{
+    background-color: #000010;
+    color: white;
+}
+
+/* Styling highlight */
+main h2{
+    font-size: 2rem;
+    color: rgb(35,35,35);
+    text-transform: capitalize;
+    text-align: center;
+}
+#highlight h2{
+    font-size: 2rem;
+    color: rgb(35,35,35);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#highlight #title1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+
+/* Adding background color to the section */
+#highlight{
+    background: linear-gradient(0deg, rgb(82, 170, 214), rgb(10,100,100));
+}
+
+/* You can see margin collapsing effect bringing an issue */
+#highlight{
+    padding: 12px;
+}
+
+/* Creating card */
+main ul{
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+main li{
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-desc{
+    padding: 0px;
+}
+
+main li img{
+    object-fit: cover;
+    width: 18.75rem;
+    height: 18.75rem;
+}
+
+main li{
+    height: 18.75rem;
+}
+
+.service-desc p{
+    color: rgb(134,134,134);
+}
+
+.service-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+}
+
+.service-desc a{
+    text-decoration: none;
+    color: rgb(28, 119, 119);
+}
+
+.service-desc a:hover{
+    background-color: rgb(66, 202, 202);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.action{
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+main #highlight ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+}
+
+main ul{
+    margin: 0 auto 4.5rem auto;
+}
+
+main p{
+    font-size: 1.5rem;
+}
+
+/* About Me */
+#About{
+    background: linear-gradient(0deg, rgb(82, 170, 214), rgb(10,100,100));
+    padding: 12px;
+}
+
+#About .title1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+main #About li img{
+    object-fit: cover;
+    width: 18rem;
+    height: 27rem;
+}
+
+main #About li{
+    height: 27rem;
+}
+
+.group{
+    margin: 0px;
+    text-align: center;
+}
+
+.group1{
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.experience{
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* Blog */
+#Blog{
+    background: linear-gradient(0deg, rgb(82, 170, 214), rgb(10,100,100));
+    padding: 12px;
+}
+
+#Blog .title1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+main #Blog li{
+    height: 18.75rem;
+}
+
+main #Blog ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+}
+
+/* Projects */
+#Projects{
+    background: linear-gradient(0deg, rgb(82, 170, 214), rgb(10,100,100));
+    padding: 12px;
+}
+
+#Projects .title1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+main #Projects li{
+    height: 18.75rem;
+}
+
+main #Projects ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+}
+
+/* Media query for responsive website */
+/* Hide Nav list items */
+/* For mobile view, set the h1 font size 1.5rem */
+/* Make only one column */
+@media (max-width: 768px){
+    #main-header nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+    
+    main h1{
+        font-size: 1.5rem;
+    }
+    #latest-products ul{
+        grid-template-columns: 100%;
+    }
+}
+
+/* Making responsive */
+
+/****************************** I start with jumbo content */
+/* Ipad and tablets */
+@media(max-width: 768px){
+    #jumbo-content{
+        width: 29rem;
+        margin-top: 1.2rem;
+    }
+}
+
+/* Mobile phones */
+@media(max-width: 480px){
+    #jumbo-content{
+        position: static;
+        top: 17rem;
+        margin-left: 2rem;
+        width: 19rem;
+        margin-top: 12rem;
+        padding: 5px 0 10px 0;
+    }
+    #jumbo-content p{
+        margin-bottom: 2px;
+    }
+    #jumbo-content #btn1{
+        margin-top: 10px;
+    }
+
+}
+
+/* Very small screen */
+@media(max-width: 319px){
+    #jumbo{
+        padding: 2px;
+    }
+    #jumbo-content{
+        width: 14.5rem;
+        padding: 0;
+    }
+    #jumbo-content p{
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+}
+
+/****************************** Next highlight */
+/* Small screens and laptops */
+@media(max-width: 2000px){
+    main #highlight ul{
+        padding: 0;
+        margin-top: 1.2rem;
+        grid-template-columns: 1fr;
+     }
+ }
+
+
+/* Ipad and tablets */
+@media(max-width: 768px){
+   main #highlight ul{
+        padding: 0;
+        margin-top: 1.2rem;
+        grid-template-columns: 1fr;
+    }
+    main #About ul p{
+        font-size: 1rem;
+     }
+}
+
+/* Mobile phones */
+@media(max-width: 480px){
+    main li img{
+        object-fit: cover;
+        width: 100%;
+        height: 18.75rem;
+    }
+    main li{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+
+/****************************** Next about */
+@media(max-width: 2000px){
+    main #About ul p{
+        font-size: 1.25rem;
+     }
+ }
+
+/* Mobile phones */
+@media(max-width: 480px){
+    main #About li img{
+        object-fit: cover;
+        width: 100%;
+        height: 27rem;
+    }
+    main #About li{
+        height: 100%;
+    }
+    #services{
+        padding: 0;
+    }
+}
+
+/****************************** Next blog */
+
+/* Mobile phones */
+/* Small screens and laptops */
+@media(max-width: 2000px){
+    main #Blog ul{
+        padding: 0;
+        margin-top: 1.2rem;
+        grid-template-columns: 1fr;
+     }
+ }
+
+@media(max-width: 480px){
+    main #About li img{
+        object-fit: cover;
+        width: 100%;
+        height: 27rem;
+    }
+    main #Blog li{
+        height: 100%;
+    }
+    main #Blog ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px 10px;
+    }
+}
+
+/****************************** Next projects */
+/* Small screens and laptops */
+@media(max-width: 2000px){
+    main #Projects ul{
+        padding: 0;
+        margin-top: 1.2rem;
+        grid-template-columns: 1fr;
+     }
+ }
+
+/* Mobile phones */
+@media(max-width: 480px){
+    /* main #Projects li img{
+        object-fit: cover;
+        width: 100%;
+        height: 27rem;
+    } */
+    main #Projects li{
+        height: 100%;
+    }
+    main #Projects ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px 10px;
+    }
+}
+
+main ol{
+    display: block;
+    width: 100%;
+    height: 3px;
+    color: #000010;
+}
+
+main ol li{
+    height: 100%;
+}

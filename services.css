@@ -1,0 +1,24 @@
+
+
+
+/* Media query for responsive website */
+/* Hide Nav list items */
+/* For mobile view, set the h1 font size 1.5rem */
+/* Make only one column */
+@media (max-width: 768px){
+    #main-header nav{
+        display: none;
+    }
+
+    .menu-btn{
+        display: flex;
+    }
+    
+    main h1{
+        font-size: 1.5rem;
+    }
+    #latest-products ul{
+        grid-template-columns: 100%;
+    }
+}
+
