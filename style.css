@@ -225,6 +225,14 @@ main #Projects ul{
 /* Hide Nav list items */
 /* For mobile view, set the h1 font size 1.5rem */
 /* Make only one column */
+@media (min-width: 769px){
+    .menu-btn{
+        display: none;
+    }
+    #side-drawer{
+        display: none;
+    }
+}
 @media (max-width: 768px){
     #main-header nav{
         display: none;
